@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Module 01: The Tester's Role</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/white.min.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/monokai.min.css">
+    
+    <style>
+        html {
+            font-size: 10%;
+        }
+        .slides section {
+            text-align: left;
+            color: black;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .slides section:first-of-type {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            position: relative;
+        }
+        .slides section:first-of-type h6 {
+            text-align: center;
+            width: 100%;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .slides section:first-of-type p {
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: 0;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .slides section:first-of-type p:first-of-type {
+            bottom: 30px;
+        }
+        .slides section:first-of-type p:last-of-type {
+            bottom: 10px;
+        }
+        .slides section h6 {
+            font-weight: bold;
+            color: black !important;
+            margin-bottom: 1em;
+            flex-shrink: 0;
+            text-align: left;
+            font-size: 1em;
+        }
+        .slides section p {
+            color: black !important;
+            text-align: justify;
+            margin: 0 0 1em 0;
+        }
+        .slides section li {
+            color: black !important;
+        }
+        .answer-content {
+            text-align: left;
+            margin: 0;
+            width: 100%;
+            color: black;
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 10px;
+            box-sizing: border-box;
+        }
+        .answer-content p {
+            text-align: justify;
+            color: black;
+            margin-bottom: 1em;
+        }
+        .slides section a {
+            color: #0066cc;
+        }
+        .reveal .slides {
+            text-align: left;
+            color: black;
+        }
+       
+        .slides section .slides section {
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .slides section .slides section .answer-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+       
+        .slides section .slides section h6 {
+            display: none;
+        }
+        
+        .final-slide {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center !important;
+            height: 100vh;
+        }
+        .final-slide h6 {
+            text-align: center !important;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body style="background: #f5f5dc;">
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title Slide -->
+            <section>
+                <h6>Module 01. The Tester's Role in the Software Development Lifecycle</h6>
+                <p><small>Created by <a href="https://github.com/KarinaR-Ch">Karina Repinaska-Churkina</a></small></p>
+                <p><small>Please leave your comments here - <a href="https://docs.google.com/document/d/1TeNPy_rY4ZHCnHa0uav3DHL_AcK_gp8hDQq6K4jLT1c/edit?tab=t.0">Google Doc</a></small></p>
+            </section>
+
+            <!-- Question 1  -->
+            <section>
+                <section>
+                    <h6>1. I've been assigned to a new project. What should I do?</h6>
+                    <div class="answer-content">
+                        <p>When I am assigned to a new project, the first step is to understand the project context. I should carefully study all available documentation such as business requirements, specifications, user stories, acceptance criteria, and the test plan, understand the SDLC model of the project. It is important to understand the product's purpose, target users, and main functionality.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="answer-content">
+                        <p>I should also clarify my role on the project, my responsibilities, deadlines, and tools used for testing. I should introduce myself to the team and ask the test lead or project manager any initial questions.</p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Question 2 -->
+            <section>
+                <h6>2. Who can assign tasks to a tester on the project?</h6>
+                <div class="answer-content">
+                    <p>Tasks are usually assigned by the test lead, QA manager, or project manager. In Agile projects, tasks may also come from the Scrum Master or be taken from the sprint backlog.</p>
+                </div>
+            </section>
+
+            <!-- Question 3 -->
+            <section>
+                <h6>3. If using the Scrum framework, what is the role of the product owner on the project?</h6>
+                <div class="answer-content">
+                    <p>The Product Owner is responsible for defining product requirements, managing and prioritizing the product backlog, and communicating customer needs to the team. They decide what should be developed first.</p>
+                </div>
+            </section>
+
+            <!-- Question 4 -->
+            <section>
+                <h6>4. Does the test lead test the features, or are they busy with management tasks only?</h6>
+                <div class="answer-content">
+                    <p>The extent to which a Test Lead participates in actual testing activities is variable. It depends on factors like the size of the testing team (e.g., a lead in a small team may test more) and can even be specified as a percentage of their workload in customer agreements (e.g., 20%). A Test Lead mainly focuses on management tasks such as planning, coordination, reporting, and mentoring. However, they may also test critical or complex features when needed.</p>
+                </div>
+            </section>
+
+            <!-- Question 5 -->
+            <section>
+                <h6>5. Can I communicate directly with the developers if I'm a junior tester? What questions can I ask?</h6>
+                <div class="answer-content">
+                    <p>Yes, a junior tester can communicate directly with developers. They can ask questions about functionality, expected behavior, bug reproduction steps, logs, and details.</p>
+                </div>
+            </section>
+
+            <!-- Question 6 -->
+            <section>
+                <h6>6. You've received a task. The instructions are unclear, and the entire task seems too complicated for you. Moreover, a deadline was not specified. What should you do in this situation? Who can help you?</h6>
+                <div class="answer-content">
+                    <p>I should not guess. I need to ask for clarification from the test lead, project manager, or task author. They can help clarify requirements, priorities, scope, and deadlines.</p>
+                </div>
+            </section>
+
+            <!-- Question 7 -->
+            <section>
+                <h6>7. Am I allowed to communicate directly with the customer?</h6>
+                <div class="answer-content">
+                    <p>Usually, direct communication with the customer is done through the project manager or product owner. A tester may communicate with the customer only if this is allowed by project rules.</p>
+                </div>
+            </section>
+
+            <!-- Question 8 -->
+            <section>
+                <h6>8. I have some problems with the developer: We cannot agree on certain project-related issues. What can I do?</h6>
+                <div class="answer-content">
+                    <p>I should try to resolve the issue professionally by discussing facts and requirements. If the conflict remains, I should involve the test lead or project manager as a mediator.</p>
+                </div>
+            </section>
+
+            <!-- Question 9 -->
+            <section>
+                <h6>9. The developer asked me not to report a bug of major severity to keep from upsetting the customer. They promised to fix the bug in the next build tomorrow. What should I do?</h6>
+                <div class="answer-content">
+                    <p>I must report the bug according to the process. Hiding a major defect is unprofessional and risky. All critical issues must be documented, even if they will be fixed later.</p>
+                </div>
+            </section>
+
+            <!-- Question 10 -->
+            <section>
+                <section>
+                    <h6>10. Create a description of a tester's typical working day - e.g., tasks and meetings that a junior tester might have.</h6>
+                    <div class="answer-content">
+                        <p>A junior tester's working day usually starts with a daily stand-up meeting. During the day, they review requirements, prepare or execute test cases, test new features, and report bugs. They may also retest fixed issues, update test documentation, attend meetings, and communicate with developers and the test lead about progress and problems.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="answer-content">
+                        <p>What information do you need for various tasks and meetings, and where (from whom) can you get it?</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="answer-content">
+                        <p>For tasks and meetings, a tester needs requirements and acceptance criteria (from the Product Owner), task priorities and deadlines (from the test lead or project manager), technical details (from developers), and test environment information (from DevOps or team leads). This information helps the tester work efficiently and avoid misunderstandings.</p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Final Slide -->
+            <section class="final-slide">
+                <h6>Thank you for your attention!</h6>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [RevealHighlight]
+        });
+    </script>
+</body>
+
+</html>
