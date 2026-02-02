@@ -16,7 +16,7 @@
     
     <style>
         html {
-            font-size: 10 %;
+            font-size: 10%;
         }
         .slides section {
             text-align: left;
@@ -36,24 +36,21 @@
         }
         .slides section:first-of-type h6 {
             text-align: center;
-            width: 100 %;
-            margin-top: auto;
-            margin-bottom: auto;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        .slides section:first-of-type .title-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px; 
+            margin-top: 20px;
         }
         .slides section:first-of-type p {
-            position: absolute;
-            left: 0;
-            right: 0;
-            text-align: center;
+            position: static; 
             margin: 0;
-            padding: 0 20 px;
-            box-sizing: border-box;
-        }
-        .slides section:first-of-type p:first-of-type {
-            bottom: 30 px;
-        }
-        .slides section:first-of-type p:last-of-type {
-            bottom: 10 px;
+            padding: 0;
+            text-align: center;
         }
         .slides section h6 {
             font-weight: bold;
@@ -74,11 +71,11 @@
         .answer-content {
             text-align: left;
             margin: 0;
-            width: 100 %;
+            width: 100%;
             color: black;
             flex: 1;
             overflow-y: auto;
-            padding-right: 10 px;
+            padding-right: 10px;
             box-sizing: border-box;
         }
         .answer-content p {
@@ -100,7 +97,7 @@
             box-sizing: border-box;
         }
         .slides section .slides section .answer-content {
-            height: 100 %;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -128,8 +125,10 @@
             <!-- Title Slide -->
             <section>
                 <h6>Module 01. The Tester's Role in the Software Development Lifecycle</h6>
-                <p><small>Created by <a href="https://github.com/KarinaR-Ch">Karina Repinaska-Churkina</a></small></p>
-                <p><small>Please leave your comments here - <a href="https://docs.google.com/document/d/1TeNPy_rY4ZHCnHa0uav3DHL_AcK_gp8hDQq6K4jLT1c/edit?tab=t.0">Google Doc</a></small></p>
+                <div class="title-content">
+                    <p><small>Created by <a href="https://github.com/KarinaR-Ch">Karina Repinaska-Churkina</a></small></p>
+                    <p><small>Please leave your comments here - <a href="https://docs.google.com/document/d/1TeNPy_rY4ZHCnHa0uav3DHL_AcK_gp8hDQq6K4jLT1c/edit?tab=t.0">Google Doc</a></small></p>
+                </div>
             </section>
 
             <!-- Question 1  -->
