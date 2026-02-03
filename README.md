@@ -1,5 +1,7 @@
 EPAM Systems
+
 [Fundamentals] Software Testing #4. UA
+
 Module 01. The Tester's Role in the Software Development Lifecycle
 Module 02. Testing Types, Methods, Approaches, Levels
 Module 03. Requirements Analysis
